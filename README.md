@@ -1,2 +1,5 @@
 # schooldata
-school data
+School app 
+
+Project pending
+Search function
