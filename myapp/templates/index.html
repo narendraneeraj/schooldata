@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  {% include "header.html" %}
+  
+  {% include "navbar.html" %}
+  <body>
+    <section>
+      <div class="p-3 mb-2 bg-dark text-white">
+<div class="container">
+
+<h1> Welcome to our School App </h1>
+<form id="mysubmitform" action="" method="post">
+  <input type="hidden" name="_token" value=""><div class="row">
+      <div class="col-md-2 mb-3" >
+          <input type="text" class="form-control" maxlength="2" placeholder="Schoolcode"
+              aria-label="Name">
+      </div>
+      <div class="col-md-8 mb-3">
+          <!--  <input type="submit" value="Search" class="submitt"> -->
+          <input type="text" id="sss" name="sss" maxlength="6" value="" class="form-control"
+              required="required" placeholder="Student Name with school ">
+      </div>
+      <div class="col-md-2 text-center">
+          <button type="submit" class="btn btn-primary col-12">Search</button>
+      </div>
+  </div>
+ </form>
+</div>
+</div>
+   </section>
+   <div class="container">
+   <div class="row">
+    <div class="col-8">
+    
+   <table class="table table-hover table-sm table-center table-bordered table-bordered">
+    <tbody><tr>
+        <th colspan="2" class="bg-dark p-2 text-white">Search Result
+            School:</th>
+    </tr>
+    <tr><td> School Code</td><td>ABC</td></tr>
+    <tr><td> Studentid</td><td>CL0101</td></tr>
+    <tr><td> Student_firstname</td><td>Raj Kumar</td></tr>
+    <tr><td> School Name</td><td>St. Clare School</td></tr>
+    <tr><td>Address</td><td>School Address</td></tr>
+    
+</tbody></table>
+</div>
+<div class="col-4">
+    {% load static %}
+    <img src="{% static '/111.jpg' %}" alt="My image" height="250px" width="auto"/> 
+  </div>
+</div>
+</div>
+    {% include "footer.html" %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ 
+  </body>
+</html>
